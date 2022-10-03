@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", function(){
         previousScreen.textContent = currentValue;
         currentScreen.textContent = currentValue;
     });
+
+    equal.addEventListener("click", function(){
+        calculate();
+    });
 });
 
 
@@ -47,3 +51,20 @@ function handleOperator(op) {
     previousValue = currentValue;
     currentValue = ''
 }
+
+function calculate() {
+    previousValue = Number(previousValue);
+    currentValue = Number(currentValue);
+
+    if(operator === "+") {
+        previousValue += currentValue;
+    } else if(operator === "-") {
+        previousValue -= currentValue;
+    } else if(operator === "*") {
+        previousValue *= currentValue;
+    } else if(operator === "/") {
+        previousValue /= currentValue;
+    }
+
+    console.log(previousValue);
+};
