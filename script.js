@@ -5,9 +5,9 @@ let currentValue = '';
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    let clear = document.querySelector("btn-clear");
-    let equal = document.querySelector("btn-equal");
-    let decimal = document.querySelector("btn-decimal");
+    let clear = document.querySelector(".btn-clear");
+    let equal = document.querySelector(".btn-equal");
+    let decimal = document.querySelector(".btn-decimal");
 
     let numbers = document.querySelectorAll(".btn-number");
     let operators = document.querySelectorAll(".btn-operator");
@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", function(){
         previousScreen.textContent = previousValue + " " + operator;
         currentScreen.textContent = currentValue;
     }));
+
+    clear.addEventListener("click", function(){
+        previousValue = '';
+        currentValue = '';
+        operator = '';
+        previousScreen.textContent = currentValue;
+        currentScreen.textContent = currentValue;
+    });
 });
 
 
