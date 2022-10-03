@@ -30,22 +30,39 @@ button {
     border: 1px solid greenyellow;
 }
 
+.btn-number:hover{
+    background-color: palegreen;
+}
+
+
 .btn-operator {
     border: 1px solid steelblue;
 }
 
-.btn-operator {
-    border: 1px solid steelblue;
+.btn-operator:hover{
+    background-color: paleturquoise;
 }
 
 .btn-decimal {
     border: 1px solid gold;
 }
 
+.btn-decimal:hover {
+    background-color: palegoldenrod;
+}
+
 .btn-equal {
     border: 1px solid violet;
 }
 
+.btn-equal:hover {
+    background-color: plum;
+}
+
 .btn-clear {
     border: 1px solid red;
+}
+
+.btn-clear:hover {
+    background-color: red;
 }
