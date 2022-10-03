@@ -79,4 +79,16 @@ button {
     border: 1px solid black;
     height: 75px;
     margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.previous {
+    font-size: 25px;
+}
+
+.current {
+    font-size: 35px;
 }
