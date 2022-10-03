@@ -83,6 +83,9 @@ button {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .previous {

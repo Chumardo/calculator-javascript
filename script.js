@@ -43,9 +43,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 function handleNumber(num) {
-    if (currentValue.length <= 10) {
-        currentValue += num;
-    }
+    currentValue += num;
 };
 
 function handleOperator(op) {
