@@ -8,8 +8,8 @@ body {
 }
 
 button {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -65,4 +65,18 @@ button {
 
 .btn-clear:hover {
     background-color: red;
+}
+
+.first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen {
+    width: 270px;
+    border: 1px solid black;
+    height: 75px;
+    margin: 5px;
 }
